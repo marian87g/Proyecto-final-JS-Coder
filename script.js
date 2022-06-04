@@ -1,8 +1,10 @@
-function Producto (nombre, stock, precio, iD){
+function Producto (nombre, stock, precio, iD, tipoDeComercio
+    ){
     this.nombre = nombre;
     this.stock = stock;
     this.precio = precio;
     this.iD = iD;
+    this.tipoDeComercio = tipoDeComercio
 
     this.venta = function(cantidadComprada){
         this.stock -= cantidadComprada
@@ -11,10 +13,10 @@ function Producto (nombre, stock, precio, iD){
 }
 
 
-const productoA = new Producto("Suprema de pollo", 15, 699, 1 )
-const productoB = new Producto("Milanesa de ternera", 20, 599, 2)
-const productoC = new Producto("Porcion de papas fritas", 30, 399, 3)
-const productoD = new Producto("Porcion de pure de papas", 20, 299, 4)
+const productoA = new Producto("Suprema de pollo", 15, 699, 1, "Casa de comidas" )
+const productoB = new Producto("Milanesa de ternera", 20, 599, 2, "Casa de comidas" )
+const productoC = new Producto("Porcion de papas fritas", 30, 399, 3, "Casa de comidas" )
+const productoD = new Producto("Porcion de pure de papas", 20, 299, 4, "Casa de comidas" )
 
 const listaProductos = [productoA, productoB, productoC, productoD]
 
@@ -116,9 +118,9 @@ function compraTotal(){
 
 let boton1 = document.querySelector('.boton')
 
-boton1.addEventListener('click', saludarAl )
+boton1.addEventListener('click', renderProductos )
 
-function saludarAl() {
+function renderProductos() {
     let contenedorCards = document.createElement("cardConteiner");
 
     let card = document.createElement("cards");
