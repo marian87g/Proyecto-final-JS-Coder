@@ -1,0 +1,11 @@
+.catalogo{
+    flex-direction: column;
+}
+
+.cardConteiner{
+    flex-direction: column;
+}
+
+.cards{
+    flex-direction: column;
+}
