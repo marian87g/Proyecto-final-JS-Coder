@@ -59,8 +59,10 @@ function listarProductos(){
     alert(listadoProductosMenu)
 }
 
-function saludar(saludo){
-    alert(saludo + " nuestro Comercio!")
+
+
+function saludar(){
+    swal("Bienvenido!");
 }
 
 function stockInsuficiente(stock) {
@@ -75,7 +77,16 @@ let cantidadComprada;
 let precioTotalVenta = 0;
 
 function compra(stock, precio, producto) {
-    cantidadComprada = parseInt(prompt("Ingrese la cantidad que quiere comprar:"));
+    // cantidadComprada = parseInt(prompt("Ingrese la cantidad que quiere comprar:"));
+    let texto = ''
+    let formulario = document.getElementById('formulario')
+    let input = document.getElementById('input')
+    formulario.addEventListener('submit', (e) => {
+    e.preventDefault()
+    texto = input.value
+    console.log('texto', texto)
+    })
+
 
     if(cantidadComprada <= stock) {
 
