@@ -3,15 +3,3 @@
     padding: 0;
     box-sizing: border-box; 
 }
-
-.catalogo{
-    flex-direction: column;
-}
-
-.cardConteiner{
-    flex-direction: column;
-}
-
-.cards{
-    flex-direction: column;
-}

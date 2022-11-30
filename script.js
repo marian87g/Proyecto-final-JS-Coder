@@ -125,7 +125,7 @@ function compraTotal(){
 
 }
 
-menu()
+// menu()
 
 let boton1 = document.querySelector('.boton')
 
