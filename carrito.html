@@ -17,7 +17,7 @@
     
         <ul class="nav-bar">
           <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="nuestros productos.html">Nuestros productos</a></li>
+          <li><a href="nuestros_productos.html">Nuestros productos</a></li>
           <li><a href="">Contactanos</a></li>
           <li><a href="carrito.html">Carrito<span id="numero" class="numero">0</span></a></li>
         </ul>
@@ -37,10 +37,10 @@
             <h2 class="titulo-carrito">Carrito de compras</h2>
     
           <div class="contenedor-carrito">
-            <p>El carrito esta vavio</p>
+            <p id="carro-vacio" >El carrito esta vacio</p>
 
-            <div class="productos-en-carrito">
-                <div class="producto-en-carrito">
+            <div class="contenedor-carro-productos">
+                <!-- <div class="producto-en-carrito">
                     <img src="" alt="">
                     <div class="nombre-product-carrito">
                         <p>Nombre</p>
@@ -79,10 +79,10 @@
                         <p>$1000</p>
                     </div>
                     <button class="eliminar-product-carrito">Eliminar pruductos</button>
-                </div>
+                </div> -->
             </div>
         
-            <div class="carrito-comandos">
+            <div class="carro-comandos" id="carro-comandos" >
                 <div class="comando-izq">
                     <button class="comando-vaciar">Vaciar carrito</button>
                 </div>
@@ -95,6 +95,8 @@
                 </div>
             </div>
 
+            <p id="contenedor-carro-comprado" class="contenedor-carro-comprado" > Muchas gracias por tu compra </p>
+
           </div>
 
         </section>
@@ -105,7 +107,10 @@
       <h2>logo</h2>
   
     </footer>  
-    
+   
+    <script src="carrito_compras.js"></script>
   </body>
+  
+  <!-- <script src="script.js"></script> -->
   
 </html>
